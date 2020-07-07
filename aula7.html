@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    
+<head>
+<title> Tabelas </title>
+<meta charset="utf-8">
+
+<style>
+    table, th, td{border: 1px solid #000;} 
+    th, td {padding: 7px;}
+    .Nome {background-color:purple;}
+    .Email{background-color:greenyellow;}
+    .Telefone{background-color: blue;}
+    .Cargo{background-color: yellow;}
+</style>
+
+    
+</head>
+    
+<body>
+<h1>Tabelas</h1>
+<table>
+    <caption><b>Cadastro de Clientes</b></caption>    
+
+<colgroup>
+<col class="Nome">    
+<col class="Email">
+<col class="Telefone">
+<col class="Cargo">
+</colgroup>
+
+<thead>
+<tr>
+<th>Nome:</th>    
+<th>Email:</th>
+<th>Telefone:</th>
+<th>Cargo:</th>
+</tr>    
+</thead>    
+
+<tbody>
+<tr>
+<td> Klaus </td>    
+<td>klaus.007@hotmail.com</td>
+<td>(11)959591685</td>
+<td rowspan="2"><b>Desenvolvedor Web</b></td>
+
+</tr>
+<tr>
+<td> Milena </td>    
+<td>milenalinda@hotmail.com</td>
+<td>(11) 940028922</td>    
+    
+</tr>   
+</tbody>
+
+<tfoot>    
+<tr>
+    <td colspan="4"><b>Total: 2</b></td>    
+</tr>
+</tfoot>
+
+</table>
+    
+
+</body>
+    
+</html>
