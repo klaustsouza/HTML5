@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+<head>
+ <title> Formulários </title>
+    <meta charset="UTF-8">
+    <meta name="discrition" content="Curso Formulários">
+    <meta name="keywords" content="html5,php,css3">
+    <meta name="author" content="Klaus T">
+</head>    
+<body>
+ <form action="cadastro.php" method="post">
+    <fieldset>
+        <legend><b>INFORMAÇÕES PESSOAIS</b></legend>
+    <b>Nome:</b><br>
+    <input type="text" name="nome" required autofocus maxlength="5"><br>
+    <b>Senha:</b><br>
+    <input type="password" name="senha"><br>
+    <b>Email:</b><br>
+    <input type="email" name="email"autocomplete= "off" placeholder="@hotmail.com" required><br>   
+    <br><b>Time</b><br>
+    <input type="radio" name="time" value="Corinthias">Corinthias<br>
+    <input type="radio" name="time" value="São paulo">São Paulo<br>
+    <input type="radio" name="time" value="Barcelona">Barcelona<br>
+    <input type="radio" name="time" value="Manchester">Manchester<br>
+        
+        <br><b>Cores</b><br>
+    <input type="checkbox" name="cores" value="Azul">Azul<br>
+    <input type="checkbox" name="cores" value="Vermelho">Vermelho<br>
+    <input type="checkbox" name="cores" value="Verde">Verde<br>
+    
+        <br><b>Quantidade:</b>
+    <input type= "number" name="quantidade" min="0" max="500" step="5">
+        <br><br>
+        <input type ="range" name="quantidade"><br>
+        
+        <br><b>Cor</b>
+        <input type="color" name="cor"><br>
+        <br>
+        <input type="submit" name="btn-enviar" value="Enviar">      
+    </fieldset>
+ </form>   
+</body>    
+
+</html>
