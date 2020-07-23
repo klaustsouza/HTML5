@@ -1,17 +1,3 @@
-# Nessa aula de formulários eu usei:
-
-1- autofocus
-2- maxlength (limita os caracteres)
-3- autocomplete (apresentas opçoes de emails ou nomes salvos no navegador)
-4- placeholder (apresenta algum nome que queira e depois sai ao clicar)
-5- required (faz que com o usuario preencha o campo)
-6- radio
-7 -checkbox
-8- number
-9- range (slidezinho top)
-10- color
-----------------------------------------------------------------------------------------------------------------------------------
-
 <!DOCTYPE html>
 
 <html lang="pt-br">
@@ -26,13 +12,60 @@
  <form action="cadastro.php" method="post">
     <fieldset>
         <legend><b>INFORMAÇÕES PESSOAIS</b></legend>
-    <b>Nome:</b><br>
+       
+        <b>Nome:</b><br>
     <input type="text" name="nome" required autofocus maxlength="5"><br>
-    <b>Senha:</b><br>
+        <b>Senha:</b><br>
     <input type="password" name="senha"><br>
-    <b>Email:</b><br>
-    <input type="email" name="email"autocomplete= "off" placeholder="@hotmail.com" required><br>   
-    <br><b>Time</b><br>
+        <b>Email:</b><br>
+    <input type="email" name="email"autocomplete= "off" placeholder="@hotmail.com" required><br>
+    
+        <br><b>Imagem:</b><br>
+    <br><input type="file" name="imagem"><br><br>
+        <input type="hidden"name="id"><br><br>
+        <b>Data:</b><br>
+    <input type="date" name="data" min="2000-12-31" max="2020-12-31"><br><br>
+        <b>Hora:</b><br>
+    <input type="time" name="hora"><br><br>
+        <b>Mês e Ano:</b><br>
+    <input type="month" name="mes-ano"><br><br>
+        <b>Semana:</b><br>
+    <input type="week" name="semana"><br><br>
+        <b>Data e Hora</b><br>
+    <input type="datetime-local" name="data-e-hora"><br><br> 
+        <b>Mensagem:</b><br>
+    <textarea name="mensagem" rows="5" cols="30"></textarea><br><br>
+        <button type="button">Clique aqui </button><br><br>
+        
+        <b>Escolha seu veículo:</b><br>
+        <select name="veiculo">
+        <optgroup label="Carros">
+        <option value="camaro">Camaro</option>
+        <option value="hilux"> Hilux </option>    
+        </optgroup>
+            
+        <optgroup label="Motos">
+        <option value="pop100" selected>Pop 100</option>
+        <option value="zig-50">Zig-50</option>
+        </optgroup>    
+            
+        </select><br><br>
+        
+        <b>Escolha um curso:</b><br>
+        <input name="cursos" list="lista-cursos">
+        
+        <datalist id="lista-cursos">
+            <option value="HTML5"></option>
+            <option value="CSS3"></option>
+            <option value="PHP"></option>
+        </datalist><br><br>
+        <b>URL:</b><br>
+    <input type="url" name="site"><br><br>
+        <b>Search:</b><br>    
+    <input type="search"name="pesquisa"><br>
+        <b>Telefone:</b><br>
+    <input type="tel" name="telefone"><br>    
+        <br><b>Time</b><br>
     <input type="radio" name="time" value="Corinthias">Corinthias<br>
     <input type="radio" name="time" value="São paulo">São Paulo<br>
     <input type="radio" name="time" value="Barcelona">Barcelona<br>
